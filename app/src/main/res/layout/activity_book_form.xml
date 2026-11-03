@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tvFormTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar libro leído"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#263238"
+            android:layout_marginBottom="28dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Título del libro *"
+            android:labelFor="@id/etBookTitle"
+            android:textSize="16sp"
+            android:textColor="#263238"/>
+
+        <EditText
+            android:id="@+id/etBookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:inputType="textCapSentences"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Autor *"
+            android:labelFor="@id/etBookAuthor"
+            android:textSize="16sp"
+            android:textColor="#263238"/>
+
+        <EditText
+            android:id="@+id/etBookAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:inputType="textCapWords"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fecha de lectura (opcional, AAAA-MM-DD)"
+            android:labelFor="@id/etReadDate"
+            android:textSize="16sp"
+            android:textColor="#263238"/>
+
+        <EditText
+            android:id="@+id/etReadDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:inputType="date"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notas personales (opcional)"
+            android:labelFor="@id/etBookNotes"
+            android:textSize="16sp"
+            android:textColor="#263238"/>
+
+        <EditText
+            android:id="@+id/etBookNotes"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="top"
+            android:inputType="textMultiLine|textCapSentences"
+            android:layout_marginBottom="28dp"/>
+
+        <Button
+            android:id="@+id/btnSaveBook"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Guardar libro"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/btnCancelBook"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Cancelar"
+            android:layout_marginTop="12dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
